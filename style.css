@@ -28,7 +28,6 @@ header h1 {
 nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -50,8 +49,13 @@ nav a:hover{
   align-items: center;
   padding: 10rem 10%;
   background: #fff;
-}
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
+}
+#Inicio{display: none;}
+#Inicio:target{
+  display: flex;
+}
 .text {
   max-width: 50%;
 }
@@ -94,25 +98,42 @@ nav a:hover{
 .caracterizticas {
   display: inline-block;
   padding: 4rem 10%;
-  background: #f0f0f0;
-  margin: 10px;
-}
-
-.caracterizticas {
+  background-color: #f0f0f0;
+  margin: 2.5em auto;
   background: white;
-  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+  
 }
 
 .caracterizticas h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
+#servicios{display:none;}
+#servicios:target{
+   display: inline-block;
+}
+#contacto{
+  display:none;
+}
+#contacto:target{
+  display:inline-block;
+}
+.contacto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 10%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 5em auto;
+}
+
 .formulario{
     background-color: white;
-    padding: 4rem 10%;
+    padding: 10rem 10%;
     text-align: center;
 }
 form{
@@ -135,10 +156,17 @@ button[type="submit"]{
     border-radius: 8px;
     font-size: 1.2rem;
     cursor:pointer;
+    transition: background 0.3s ease;
 }
 button[type="submit"]:hover{
     background-color: #ecdfdf;
     color:#131212;
+}
+#formulario{display: none;}
+#formulario:target{
+  display:flex;
+  flex-direction: column;
+  margin-top: 2;
 }
 
 footer {
@@ -160,12 +188,16 @@ footer a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
+  position: fixed;
 }
 footer a:hover{
     background-color: #333;
     color: aliceblue;
     border-radius: 12px;
     
+}
+#contacto:target{
+display:flex;
 }
 
 
@@ -185,4 +217,17 @@ footer a:hover{
  img{
     display:none;
  }
+ .contacto{
+   display: inline-block;
+  padding: 4em 20%;
+  background-color: #f0f0f0;
+  margin: 10em auto; 
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  justify-content: space-between;
+  
+}
+
 }
