@@ -49,11 +49,13 @@ nav a:hover{
 }
 .container img {
   margin-left: 50em;
-  margin-top: -17em;
+  margin-top: -32em;
 }
 
 .text {
   max-width: 50%;
+  padding: 13em 1%;
+  vertical-align: middle;
 }
 
 .text h2 {
@@ -233,14 +235,17 @@ img{
 }
   .contacto{
   display: inline-block;
-  padding: 4rem 25%;
+  padding: 4rem 50%;
   background-color: #f0f0f0;
   margin: 2.5em auto;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+  margin-left: auto;
   }
-  
+  .text {
+padding: 0;
+}
 
 }
