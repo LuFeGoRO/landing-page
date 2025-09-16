@@ -48,8 +48,8 @@ nav a:hover{
 
 }
 .container img {
- margin-left: 50em;
- margin-top: -27em;
+  margin-left: 50em;
+  margin-top: -17em;
 }
 
 .text {
@@ -118,10 +118,8 @@ nav a:hover{
   display:inline-block;
 }
 .contacto{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10rem 10%;
+  display: inline-block; 
+  padding: 10rem 150%;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   margin: 5em auto;
@@ -129,13 +127,15 @@ nav a:hover{
 
 .formulario{
     background-color: white;
-    padding: 10rem 10%;
+    padding: 10rem 19%;
     text-align: center;
+    margin-top: 2%;
+    margin-left: 25em;
 }
 form{
     max-width: 500px;
     margin: 0 auto;
-    display:flex;
+    display:contents;
     flex-direction: column;
 }
 input, select, textarea{
@@ -160,9 +160,16 @@ button[type="submit"]:hover{
 }
 #formulario{display: none;}
 #formulario:target{
-  display:flex;
-  flex-direction: column;
-  margin-top: 2;
+  display: inline-block;
+}
+form div{
+    margin-bottom: 0.1rem;
+}
+form div>select{
+    width: 85%;
+}
+form div>textarea{
+    width: 85%;
 }
 
 footer {
@@ -172,12 +179,7 @@ footer {
   padding: 2rem 0;
   margin-top: 2rem;
 }
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
+
 
 footer a {
   color: #fff;
@@ -209,21 +211,36 @@ display: inline-block;
   .text {
     max-width: 100%;
   }
-
- img{
-    display:none;
- }
- .contacto{
-   display: inline-block;
-  padding: 4em 20%;
+.formulario{
+    background-color: white;
+    padding: 10rem 10%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 0;
+}
+form div>select{
+    width: 79%;
+}
+form div>textarea{
+    width: 79%;
+}
+  .container
+img{
+  display: none;
+}
+#logo{
+  display: none;
+}
+  .contacto{
+  display: inline-block;
+  padding: 4rem 25%;
   background-color: #f0f0f0;
-  margin: 10em auto; 
+  margin: 2.5em auto;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  justify-content: space-between;
+  }
   
-}
 
 }

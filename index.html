@@ -26,7 +26,7 @@
         nuestra red global de ayuda técnica.</p>
       <button class="cta-btn"><a href="#formulario">Únete Ahora</a></button>
     </div>
-    <img src="logos/tat.png" alt="soporte_mudial" style="border-radius:12px; max-width: 40%;">
+    <img src="logos/tat.png" alt="soporte_mudial">
   </section>
   <section class="caracterizticas" id="servicios">
     <div class="caracterizticas">
@@ -47,17 +47,18 @@
     <h2>Formulario de ingreso</h2>
     <p>completa el formulario para unirte</p>
     <form action="">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electronico" required>
-      <input type="tel" placeholder="Telefono" required>
-      <select required>
+      <div><input type="text" placeholder="Nombre completo" required></div>
+      <div><input type="email" placeholder="Correo electronico" required></div>
+      <div><input type="tel" placeholder="Telefono" required></div>
+      <div><input type="text" placeholder="Ciudad y pais" required></div>
+      <div><select required>
         <option value="">Area de interes</option>
         <option value="soporte">Soporte tecnico</option>
         <option value="rescate">Rescates</option>
         <option value="Desarrollo">Desarrollo</option>
         <option value="logostica">Logistica</option>
-      </select>
-      <textarea rows="4" placeholder="Porque estas interesad@"></textarea>
+      </select></div>
+      <div><textarea rows="4" placeholder="Porque estas interesad@"></textarea></div>
       <button type="submit">Hacer solicitud</button>
     </form>
 
@@ -65,9 +66,10 @@
   <section id="contacto" id="contacto">
     <div class="contacto">
       <p>Email: contacto@worldtechaid.org</p>
-      <img src="logos/tat.png" alt="pppp">
+      <p>Teléfono: +1 234 567 890</p>
+      <img src="logos/tat.png" alt="logo" id="logo">
     </div>
-   
+
   </section>
   <footer>
     <p>© 2025 WorldTechAid - Todos los derechos reservados</p>
